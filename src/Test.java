@@ -28,9 +28,23 @@ public class Test {
 		
 		
 		System.out.println("These are all of the even ints");
-		for(int j =0; i<inputStrings.length; j++)
+		for(int j =0; j<inputStrings.length; j++)
 		{
+			int tempInt = 0;
+			if(inputStrings[j].equals(""))
+			{
+				
+			}
 			
+			else 
+			{
+				tempInt = Integer.parseInt(inputStrings[j]);
+				
+				if(tempInt % 2 == 0)
+				{
+					System.out.println(tempInt);
+				}
+			}
 		}
 	}
 }
