@@ -28,6 +28,9 @@ public class Test {
 		
 		
 		System.out.println("These are all of the even ints");
-		
+		for(int j =0; i<inputStrings.length; j++)
+		{
+			
+		}
 	}
 }
