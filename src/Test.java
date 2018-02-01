@@ -25,6 +25,12 @@ public class Test {
 			}
 		}
 		System.out.println("The sum of the integers that are in the file is : "+sum);
-		//
+		//code below displays every number divisible by 3
+		for(int i=0; i<inputStrings.length;i++) {
+			int currNum=Integer.parseInt(inputStrings[i]);
+			if(currNum%3==0) {
+				System.out.println("this number is divisible by 3: "+currNum);
+			}
+		}
 	}
 }
