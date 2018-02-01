@@ -22,5 +22,9 @@ public class Test {
 			sum+=Integer.parseInt(inputStrings[i]);
 		}
 		System.out.println("The sum of the integers that are in the file is : "+sum);
+		
+		
+		System.out.println("These are all of the even ints");
+		
 	}
 }
