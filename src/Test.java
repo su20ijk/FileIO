@@ -26,7 +26,7 @@ public class Test {
 				}
 			}
 		}
-		System.out.println("\nThe sum of the integers that are in the file is : " + sum);
-		//
+		System.out.println("\n\nThe sum of the integers that are in the file is : " + sum);
+		
 	}
 }
