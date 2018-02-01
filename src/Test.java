@@ -20,13 +20,13 @@ public class Test {
 			if (inputStrings[i].equals("")) {
 
 			} else {
-				sum += Integer.parseInt(inputStrings[i]);
-				if (Integer.parseInt(inputStrings[i]) % 2 != 0) {
-					System.out.print(inputStrings[i] + " ");
+				sum += Integer.parseInt(inputStrings[i]); //adds each number to variable sum
+				if (Integer.parseInt(inputStrings[i]) % 2 != 0) { //checks to see if the current index is not divisible by two
+					System.out.print(inputStrings[i] + " "); //prints out the value if it is not divisible by two.
 				}
 			}
 		}
-		System.out.println("\n\nThe sum of the integers that are in the file is : " + sum);
+		System.out.println("\n\nThe sum of the integers that are in the file is : \n" + sum);
 		
 	}
 }
