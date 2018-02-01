@@ -13,7 +13,7 @@ public class Test {
 		Scanner fileInput = new Scanner(inputFile);
 		String template="";
 		while(fileInput.hasNext()){ 
-			template=template+input.nextLine()+"\n";
+			template=template+fileInput.nextLine()+"\n";
 		}
 		//code above store the input file into  template
 		String [] inputStrings=template.split(" ");
@@ -22,5 +22,7 @@ public class Test {
 			sum+=Integer.parseInt(inputStrings[i]);
 		}
 		System.out.println("The sum of the integers that are in the file is : "+sum);
+
+		
 	}
 }
