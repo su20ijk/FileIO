@@ -28,14 +28,16 @@ public class Test {
 			}
 		}
 		System.out.println("\n\nThe sum of the integers that are in the file is : \n" + sum);
+
+		// code below displays every fifth number in the list
 		int count = 1;
 		System.out.println("Every fifth number is:");
 		for (int i = 0; i < inputStrings.length; i++) {
-
 			if (count % 5 == 0) {
 				System.out.println(inputStrings[i]);
 			}
 			count++;
+
 		}
 		// code below displays every number divisible by 3
 		for (int i = 0; i < inputStrings.length; i++) {
