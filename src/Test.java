@@ -12,6 +12,7 @@ public class Test {
 		Scanner fileInput = new Scanner(inputFile);
 		String template = "";
 		template = template + fileInput.nextLine();
+
 		// code above store the input file into template
 		String[] inputStrings = template.split(" ");
 		int sum = 0;
@@ -39,28 +40,25 @@ public class Test {
 			count++;
 
 		}
-		System.out.println("The sum of the integers that are in the file is : "+sum);
-		
-		
+		System.out.println("The sum of the integers that are in the file is : " + sum);
+
+		// All even numbers
 		System.out.println("These are all of the even ints");
-		for(int j =0; j<inputStrings.length; j++)
-		{
+		for (int j = 0; j < inputStrings.length; j++) {
 			int tempInt = 0;
-			if(inputStrings[j].equals(""))
-			{
-				
+			if (inputStrings[j].equals("")) {
+
 			}
-			
-			else 
-			{
+
+			else {
 				tempInt = Integer.parseInt(inputStrings[j]);
-				
-				if(tempInt % 2 == 0)
-				{
+
+				if (tempInt % 2 == 0) {
 					System.out.println(tempInt);
 				}
 			}
 		}
+
 		// code below displays every number divisible by 3
 		for (int i = 0; i < inputStrings.length; i++) {
 			int currNum = Integer.parseInt(inputStrings[i]);
