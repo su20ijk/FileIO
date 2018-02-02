@@ -40,7 +40,6 @@ public class Test {
 			count++;
 
 		}
-		System.out.println("The sum of the integers that are in the file is : " + sum);
 
 		// All even numbers
 		System.out.println("These are all of the even ints");
