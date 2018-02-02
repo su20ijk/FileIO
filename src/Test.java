@@ -27,6 +27,14 @@ public class Test {
 			}
 		}
 		System.out.println("\n\nThe sum of the integers that are in the file is : \n" + sum);
-		
+		int count = 1;
+		for(int i = 0; i < inputStrings.length; i++) {
+			
+			if(count % 5 == 0) {
+				System.out.println(inputStrings[i]);
+			}
+			count++;
+		}
+		//
 	}
 }
