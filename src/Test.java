@@ -20,22 +20,31 @@ public class Test {
 			if (inputStrings[i].equals("")) {
 
 			} else {
-				sum += Integer.parseInt(inputStrings[i]); //adds each number to variable sum
-				if (Integer.parseInt(inputStrings[i]) % 2 != 0) { //checks to see if the current index is not divisible by two
-					System.out.print(inputStrings[i] + " "); //prints out the value if it is not divisible by two.
+				sum += Integer.parseInt(inputStrings[i]); // adds each number to variable sum
+				if (Integer.parseInt(inputStrings[i]) % 2 != 0) { // checks to see if the current index is not divisible
+																	// by two
+					System.out.print(inputStrings[i] + " "); // prints out the value if it is not divisible by two.
 				}
 			}
 		}
 		System.out.println("\n\nThe sum of the integers that are in the file is : \n" + sum);
+
+		// code below displays every fifth number in the list
 		int count = 1;
 		System.out.println("Every fifth number is:");
-		for(int i = 0; i < inputStrings.length; i++) {
-			
-			if(count % 5 == 0) {
+		for (int i = 0; i < inputStrings.length; i++) {
+			if (count % 5 == 0) {
 				System.out.println(inputStrings[i]);
 			}
 			count++;
+
 		}
-		//
+		// code below displays every number divisible by 3
+		for (int i = 0; i < inputStrings.length; i++) {
+			int currNum = Integer.parseInt(inputStrings[i]);
+			if (currNum % 3 == 0) {
+				System.out.println("this number is divisible by 3: " + currNum);
+			}
+		}
 	}
 }
