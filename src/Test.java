@@ -31,7 +31,7 @@ public class Test {
 		for(int i = 0; i < inputStrings.length; i++) {
 			
 			if(count % 5 == 0) {
-				System.out.println(inputStrings[i]);
+				System.out.println("Every fifth number is: "+inputStrings[i]);
 			}
 			count++;
 		}
